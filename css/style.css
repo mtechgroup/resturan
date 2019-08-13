@@ -1,0 +1,444 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir.eot');
+    src: local('../fonts/Vazir'), url('../fonts/Vazir.woff') format('woff'), url('../fonts/Vazir.ttf') format('truetype');
+}
+@font-face {
+    font-family: shabnam;
+    src: url('../fonts/shabnam.eot?#') format('eot'),
+    url('../fonts/shabnam.ttf') format('truetype'),
+    url('../fonts/shabnam.woff') format('woff');
+}
+@font-face {
+    font-family: "titr";
+    src: url('../fonts/titr.eot?#') format('eot'),
+    url('../fonts/titr.ttf') format('truetype'),
+    url('../fonts/titr.woff') format('woff');
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: shabnam;
+}
+body{
+    direction: rtl;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.btn{
+    background: #1058ff;
+    border:none;
+    color: #fff;
+    border-radius:4px;
+    line-height:5px;
+    -webkit-box-shadow: 0px 7px 15px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 15px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 15px -8px rgba(0,0,0,0.75);
+    transition: 0.5s;
+
+}
+.btn:hover{
+    -webkit-box-shadow: 0px 10px 16px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 16px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 16px -8px rgba(0,0,0,0.75);
+    cursor: pointer;
+    background: #104cd2;
+}
+
+/*--------------------- Start Login ----------------------*/
+#login
+{
+    padding: 10px;
+    background: greenyellow;
+    border: 2px black solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    font-weight: bold;
+}
+#login:hover
+{
+    background: green;
+    border: 2px #eee solid;
+    color: black;
+}
+#logo-login
+{
+    width: 100%;
+}
+#logo-login img
+{
+    width: 7%;
+    margin: 40px 46% 0 46%;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.login-box
+{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+.login-box #logo-person img
+{
+    border-radius: 50%;
+}
+.login-box h1
+{
+
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+.login-box .inputbox
+{
+    position: relative;
+}
+.login-box .inputbox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.login-box .inputbox input:focus
+{
+    border-bottom: 1px solid #03a9f4;
+}
+.login-box .inputbox label
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.login-box .inputbox input:focus ~ label,
+.login-box .inputbox input:valid ~ label
+{
+    top: -22px;
+    left: 0;
+    color: #03a9f4;
+}
+.login-box .inputbox select
+{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    color:#fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.login-box .inputbox select:focus
+{
+    color:#03a9f4;
+    background: transparent;
+    border: none;
+}
+.login-box input[type="submit"]
+{
+    background: transparent;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    width: 40%;
+    font-size: 15pt;
+    margin: 0 30%;
+}
+.login-box input[type="submit"]:hover
+{
+    background: #0085f4;
+}
+.login-box img
+{
+    width:50%;
+    margin: 0  25%;
+}
+
+/*---------------------------- Ent Login --------------------------------*/
+
+/*---------------------------- Start Top Menu ---------------------------*/
+
+
+.top-menu{
+    width:100%;
+    height:50px;
+    background: #242f3d;
+    border-bottom:1px solid #fff61a;
+}
+.top-menu span{
+    line-height:50px;
+    color: #fff42f;
+    margin-right:25px;
+}
+
+/*---------------------------- End Top Menu ------------------------------*/
+
+
+
+/*---------------------------- Start Right Menu ---------------------------*/
+
+.sidebar-toggle {
+    margin-left: -240px;
+}
+.sidebar {
+    width: 13%;
+    min-width: 150px;
+    height: 100%;
+    background: #182b37;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+.sidebar #leftside-navigation ul,
+.sidebar #leftside-navigation ul ul {
+    margin: -2px 0 0;
+    padding: 0;
+}
+.sidebar #leftside-navigation ul li {
+    list-style-type: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.sidebar #leftside-navigation ul li.active > a {
+    color: #1abc9c;
+}
+.sidebar #leftside-navigation ul li.active ul {
+    display: block;
+}
+.sidebar #leftside-navigation ul li a {
+    color: #ced2d7;
+    text-decoration: none;
+    display: block;
+    padding: 18px 25px 18px 0;
+    font-size: 14px;
+    outline: 0;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+.sidebar #leftside-navigation ul li a:hover {
+    color: yellow;
+    background: #141d29;
+}
+.sidebar #leftside-navigation ul li a span {
+    display: inline-block;
+}
+.sidebar #leftside-navigation ul li a i {
+    width: 20px;
+}
+.sidebar #leftside-navigation ul li a i .fa-angle-left,
+.sidebar #leftside-navigation ul li a i .fa-angle-right {
+    padding-top: 3px;
+}
+.sidebar #leftside-navigation ul ul {
+    display: none;
+}
+.sidebar #leftside-navigation ul ul li {
+    background: #23313f;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: none;
+}
+.sidebar #leftside-navigation ul ul li a {
+    font-size: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #aeb2b7;
+}
+
+/*---------------------------- End Right Menu ---------------------------*/
+
+/*---------------------------- Start Left Panel ---------------------------*/
+
+
+.left{
+    width:87%;
+    height:100%;
+    background: #283750;
+    float: left;
+}
+.frame{
+    width:100%;
+    border:none;
+    height:100%;
+    background: #253a47;
+}
+
+/*---------------------------- End Left Panel ---------------------------*/
+
+/*---------------------------- Start Add Food & ... -----------------------*/
+
+.all-input{
+    text-align: center;
+    margin-top:50px;
+}
+.input{
+    border-radius: 4px;
+    width: 60%;
+    height:40px;
+    padding:8px;
+    border:none;
+    margin:10px;
+    font-size:19px;
+    word-break: break-all;
+}
+/*---------------------------- End Add Food & ... -----------------------*/
+
+/*---------------------------- Start See Foods -----------------------*/
+
+.main-foots{
+    width:9%;
+    border:none;
+    height:auto;
+    font-size: 19px;
+    line-height:50px;
+    transition: 0.5s;
+    float: right;
+    margin:5px;
+    text-align: center;
+}
+.food{
+    border: 1px solid #16202c;
+    width:70%;
+    padding:2px;
+    cursor: pointer;
+    background: #1b90ff;
+    border-radius: 8px;
+    color: #fff;
+    margin:5px;
+}
+.food:hover{
+    background: #47a400;
+    border: 1px solid #fff42f;
+}
+.all-foods{
+    width:90%;
+    float: left;
+    display: inline-block;
+    margin-left: 3px;
+}
+.foods{
+    width:100%;
+    height:100%;
+    border:none;
+}
+ /*---------- Start Sandwich List ---------*/
+
+.all-main-foods{
+    width:100%;
+    border:none;
+    height:auto;
+    font-size: 12px;
+    line-height:35px;
+    transition: 0.5s;
+    margin:5px;
+    text-align: center;
+    float: left;
+
+}
+.sandwich{
+    border: 1px solid #16202c;
+    text-align: center;
+    width:6%;
+    padding:8px;
+    cursor: pointer;
+    background: #16202c;
+    border-radius: 8px;
+    color: #fff;
+    margin:10px 5px;
+    float: left;
+    font-size: 20px;
+
+}
+.sandwich:hover{
+    background: #1058ff;
+    border: 1px solid #fff42f;
+}
+
+/*---------- End Sandwich List ---------*/
+
+/*---------- Start Computing ---------*/
+
+.computing{
+    width:94.5%;
+    height:400px;
+    background: greenyellow;
+    float: left;
+}
+.computing_table{
+    width:100%;
+    float: left;
+}
+.tr1
+{
+    margin-left:50px;
+    background: #757575;
+    text-align: center;
+    height: 30px;
+    color: #FFFFFF;
+}
+.tr2{
+    margin-left:50px;
+    text-align: center;
+    height: 30px;
+    color: #000;
+    background: #d7d7d7;
+}
+.td
+{
+    font-size: 3vmin;
+}
+.computing-btn{
+    width:90%;
+    height:auto;
+    padding:5px;
+    background: #1058ff;
+    margin:50px 5% 10px 5%;
+    color: #fff;
+    font-size: 24px;
+    border:none;
+}
+.computing-btn:hover{
+    background: #104edf;
+    cursor: pointer;
+}
+
